@@ -7,8 +7,10 @@
 
 numInp = input('Enter a list of numbers: ').split(',')
 numOut = []
+value = []
 for x in numInp:
     numOut.append(int(x,2))
 for y in numOut:
     if y % 5 == 0:
-        print('{0:b}'.format(y))
+        value.append('{0:b}'.format(y))
+print(value)
