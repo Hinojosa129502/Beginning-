@@ -7,9 +7,12 @@
 
 
 wordInp = input('Input a sentence: ')
-cnt = 0
+numCt = 0
+alpCt = 0
 for x in wordInp:
     if x.isdigit() == True:
-        cnt += 1
-print('LETTERS', len(wordInp) - wordInp.count(' '))
-print('DIGITS', cnt)
+        numCt += 1
+    if x.isalpha() == True:
+        alpCt += 1
+print('DIGITS', numCt)
+print('LETTERS', alpCt)
