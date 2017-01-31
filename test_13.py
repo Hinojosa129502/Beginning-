@@ -13,4 +13,4 @@ for x in numInp:
 for y in numOut:
     if y % 5 == 0:
         value.append('{0:b}'.format(y))
-print(value)
+print(','.join(value))
